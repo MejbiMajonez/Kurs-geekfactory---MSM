@@ -1,0 +1,43 @@
+Kutas powiêkszaj¹cy siê
+
+
+
+
+------------------------------
+
+
+500 wysokoœci kontener
+800 szerokoœci kontener
+rakieta max 480
+po klikniêciu na prawe jajo
+po klikniêciu na lewe jajo zmniejsza siê
+o -10 pikseli
+minimalny rozmiar 100
+po osi¹gniêciu 250px rakieta staje siê czerwona
+na starcie jest bia³a
+
+
+
+-------------------------------------
+
+
+pi³eczka
+
+która dzia³a jak kwadracik
+odbija siê lewo - prawo
+animacja odpala siê przy przycisku start
+3 pe³ne okr¹¿enia i koniec.
+po klikniêciu start sprawiæ ¿eby przycisk przesta³
+reagowaæ
+
+----------------------------------
+
+na przysz³y tydzieñ!!!
+2 samoloty
+naprzeciwko siebie
+docieraj¹ do tego samego punktu na œrodku
+pojawia siê ,,BUM!"
+czas trwania animacji : 4 sekundy
+po sekundzie od ,,BUM" pojawia siê kupka
+gruzu która opada przez 2sekundy i zostaje
+na dnie kontenera.

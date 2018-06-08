@@ -1,0 +1,26 @@
+tab1 tab 2 tab 3 
+
+
+-----------------
+|  treœæ 1	|
+|		|
+|		|
+----------------
+
+-----------------
+|  treœæ 2	|
+|		|
+|		|
+----------------
+
+-----------------
+|  treœæ 3	|
+|		|
+|		|
+-----------------
+
+za pomoc¹ nas³uchiwacza na³o¿onego na elementy tab
+zrobimy zak³adki
+domyœlnie mog¹ wszystkie byæ ukryte
+jak kliknê na 2 to elementy 1 i 3 bêd¹ ukryte
+display:none;

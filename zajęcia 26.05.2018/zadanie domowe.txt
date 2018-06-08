@@ -1,0 +1,5 @@
+Menu przy wciœniêciu przycisku wje¿d¿a i wyje¿d¿a
+po wciœniêciu przycisku!
+(PACZ swoja strona)!
+
+WYJEB JEDNO PODPIÊCIE Z JQUERY!!!

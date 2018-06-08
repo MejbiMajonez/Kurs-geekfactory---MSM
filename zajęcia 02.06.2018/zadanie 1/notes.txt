@@ -1,0 +1,271 @@
+Mamy zrobić program
+
+Scena: 800width, 400 height
+Mały kwadracik w górnym rogu 20 x 20
+Duży przycisk START na samym początku
+
+W prawym rogu gdzieść div okrążenia
+
+Po kliknięciu przycisku start - Przycisk znika
+
+Pojawia się flaga wyścigowa
+
+
+kwadracik dyma w prawo 4s
+Potem 2 sekundy do dolnego prawego rogu
+6 sekund do lefego dolnego rogu
+i 1.5s do lewego górnego.
+
+
+Liczba okrążeń zmienia się na 1.
+
+Przejście w ten sam sposób 3 okrążeń.
+
+Po 3 okrążeniu, samochodzik zatrzymuje się na linii startu, wyświetla się nam czas wyścigu
+
+Znika nam flaga, pojawia się start.
+
+
+
+PLAN:
+HTML
+1. Zrobić scenę 800w na 400h - class scena
+2. Zrobić 'samochodzik' 20w na 20h class samochodzik
+3. Zrobić mniejszy prostokąd 780w na 380h class dupa
+4. W prawym gornym rogu div na napis 'okrężenia' poza scena okr
+5. Obok div na liczbę okrążeń class l-okr poza scena
+6. W dupa zrobić div class start
+7. pod 'okrezenia' zrobic div class czasOkrazen  i mniejszy div na class time okrazen
+8. opakowac czas i liczbe okrazen w jeden div class pWyscik
+
+CSS
+body{
+   margin, padding 0
+}
+
+scena{
+    h 400
+    w 800
+    border 1px solid #333
+    position relative
+    margin top 250px
+}
+
+samochodzik{
+    20 x 20
+    bcolor #f00
+    position absolute
+    top 1
+    left 1
+}
+
+dupa{
+    779w //w razie czego sprawdzic czy border dodaje się z zwenątrz czy wewnątrz obiektu
+    379h
+    border 1px solid
+    display: flex;
+    justify-content: center
+    align-intex center
+
+}
+
+btn-start {  //Ona nie jest klikalna
+  border 1px solid #333
+    bColor #5ad
+    text-align center
+    width: 100
+    height: 50
+    border-radius: 30%
+}
+
+start { //Tylko do klikania
+
+}
+
+start:hover {
+    cursor:pointer
+    bColor #7cf
+}
+
+flaga {
+     background-image url(do foty)
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center center;
+     cursor: jakis (np. crosshair)
+}
+
+.okrazenia-napis {
+    border 1px solid #333;
+    height: 100px;
+    wdith 50px
+    padding 10px
+    float:left
+}
+
+.liczba-okrazien {
+    float:left
+}
+
+.czas-napis{
+    border 1px solid #333;
+    height: 100px;
+    wdith 50px
+    padding 10px
+    float:left
+}
+
+.czas {
+    float:left
+}
+
+.opakowanie {
+    width 150px
+    height: 230px
+    position:absolute
+    left: 400px
+}
+
+.flacha{
+     background-image url(do foty)
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center center;
+}
+
+.clear-fix { //dodajemy po zakonczeniu divów z float left
+    clear: both;
+}
+
+
+JS
+
+listenerNa class start
+
+
+start.click
+btn-start.removeClass(start)
+zeruj()
+btn-start.addClass(flaga)
+okraz(1)
+btn-start.removeClass(Flaga)
+btn-start.addClass(start)
+
+okraz(i) {
+    if(i <= 3){
+     wPrawo(i);
+
+     If(i==2)  {wyswieltCzasOkrazien(16,5)}
+     else {wywietlCzasOkrazien 13,5}
+     wyswietlLiczbeOkrazen(i)
+
+     okraz(i+1)
+    }
+}
+
+
+
+ 4 funkcje na ruch w każdym kierunku
+    - wykorzystuja animate
+
+zeruj(){
+    czasOkrazen = 0
+    liczba Okrazen = 1
+}
+
+
+wPrawo(i){
+    animate 4 sekundy
+    z left 1 przejsc na 778
+    wDol()
+}
+
+wDol(i){
+    top: 378
+    animate 2s
+    wLweo
+}
+
+wLewo(i){
+    if(i==2){
+       flacha1()
+    } else {
+      left: 1
+      animate 6
+      wGore()
+    }
+}
+
+flacha1(){
+    left 600
+    pokazFlacha()
+}
+
+pokazFlacha(){
+    samochodzik.addClass(flacha)
+    setTimeOut(3s)
+    samochodzik.removeClass(flacha)
+    lewo(1);
+}
+
+wGore(){
+    top:1
+    aniamte 1.5s
+}
+
+
+okraz()
+{
+    wprawo();
+    wDol();
+    wLewo();
+    wGore();
+}
+
+
+var czarOkrazeni = 0;
+
+$('.czas') = czasOkrazien
+
+zwiększLiczbeOkrazen(n){
+   $('liczba-okrazien')  = n
+}
+
+Po zakończeniu okrazeń, wpisaniu liczby i czasu, dodaj START, usun flaga.
+
+
+PLAN
+HTML
+1. Zrobić scenę 800w na 400h - class scena
+2. Zrobić 'samochodzik' 20w na 20h class samochodzik
+3. Zrobić mniejszy prostokąd 780w na 380h class dupa
+4. W prawym gornym rogu div na napis 'okrężenia' poza scena okr
+5. Obok div na liczbę okrążeń class l-okr poza scena
+6. W dupa zrobić div class start
+7. pod 'okrezenia' zrobic div class czasOkrazen  i mniejszy div na class time okrazen
+8. opakowac czas i liczbe okrazen w jeden div class pWyscik
+9. Dodać trybune
+
+CSS
+1. Zewnętrzny div ( scena) [OSTYLUJ]
+2. Wewnętrzny div dupa [OSTYLUJ]
+3. Samochodzik div [OSTYLUJ]
+4. Start div [OSTYLUJ]
+5. Okrazenia div [OSTYLUJ]
+6. Czas div [OSTYLUJ]
+7. Flaga div [OSTYLUJ]
+8. Flacha [OSTYLUJ]
+9. Trybuna [OSTYLUJ]
+10. GOGO [OSTYLUJ]
+
+JS
+1. Nałóż listenera na start
+2. Usuń klase start
+3. Nadal kalse flaga
+4. wywołaj w rekurencyjnie funckje okrazeianie która wywoluje funckje w prawo, dol, lewo, gora. [3 powtórzenia]
+5. Po drugim okrazeniu wywoluj funkcje flacha
+6. W każdym okrążeniu w funkcji w GÓRĘ, dodaj napis go go. I zdejmij go w funkcji w lewo z trybuny.
+7. Po każdym przebiegu aktualizuj liczbe okrazen
+8. Po wszystkich okrazeniach aktualizuj czas o 13,5 s (po okrazeniu 2 aktualzuj czas o dodatkowe 3 sek)
+9. Usun flaga
+10. Dodaj start

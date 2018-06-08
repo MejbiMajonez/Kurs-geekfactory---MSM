@@ -1,0 +1,11 @@
+kolejnoœæ ma znaczenie!!!
+javascript
+() - funkcja void
+mo¿emy mieæ kilka parametrów
+// komentarz jednoliniowy
+prawie zawsze na koñcu linii musimy napisaæ ,,;"
+
+console log - pieniê¿ne narzêdzie , forma debuggera
+javascript dzia³a zgodnie z osi¹ czasu
+du¿e, ma³e znaki maj¹ znaczenie!
+console log- najlepszy przyjaciel

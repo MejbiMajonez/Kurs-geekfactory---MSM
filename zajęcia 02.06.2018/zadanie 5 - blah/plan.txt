@@ -1,0 +1,12 @@
+HTML :
+1. select z 8 opcjami. [Done]
+2. ramka z gumisiami. [Done]
+
+CSS:
+1. ostylowaæ gumisia. [Done]
+JS :
+1. na³o¿yæ onChange
+ (jak nie zadzia³a listenerze) selecta
+(wywo³ujemy funkcjê whatever)
+2. zrobiæ pêtle wyœwietlaj¹c¹ gumisie
+3. zrobiæ funkcjê podmieniaj¹c¹ url gumisiowi

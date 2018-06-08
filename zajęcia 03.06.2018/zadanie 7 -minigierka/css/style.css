@@ -1,0 +1,15 @@
+.kontener{
+  position:relative;
+  height:400px;
+  width:800px;
+  border:1px solid #333;
+  overflow:hidden;
+  top:0;
+  left:0;
+}
+.boxik{
+  width:10px;
+  height:10px;
+  background-color:#F00;
+  position:absolute;
+}

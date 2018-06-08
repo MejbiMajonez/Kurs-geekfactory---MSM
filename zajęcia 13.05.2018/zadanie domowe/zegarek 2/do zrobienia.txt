@@ -1,0 +1,2 @@
+odczep javascript od boxa, lub na³ó¿ go inaczej na animate
+spraw ¿eby animate pod¹¿a³ za js.

@@ -1,0 +1,19 @@
+5 domków smerfów
+
+html:
+ka¿dy img ma przypisany id
+ka¿dy img ma jedn¹ klasê wspóln¹
+id wywo³uje dŸwiêk
+klasa wywo³uje obraz
+javascript:
+var baseURL="adres/audio/";
++ element z tablicy;
+var tablica = po kolei nazwy dŸwiêków;
+nas³uchiwacz na klasê "grzyb"
+zmienna i=($this).atrybut("id");
+tworzenie obiektu;
+[substring] = wartoœæ :1 
+(var i = $(this).attr('id').subString(1);
+new Audio (baseURL + audio[i-1]).play();
+
+

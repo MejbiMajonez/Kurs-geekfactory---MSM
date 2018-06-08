@@ -1,0 +1,18 @@
+$(document).ready(function(){
+	jajo();
+	
+	
+	
+});
+wywo³anie funkcji
+function jajo(){
+	console.log('ta funkcja zosta³a wywo³ana po zaczytaniu DOM');
+});
+deklaracja funkcji
+
+deklaracja selektorów
+nie u¿ywamy polskich znaków
+nie u¿ywamy spacji
+nie zaczynamy od cyfry
+modulo : powtórzyæ!!!!
+(reszta z dzielenia )

@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.trybuna {
+    height: 400px;
+    width: 150px;
+    margin-left: 15px;
+    background-image: url("../img/tlum.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center center;
+    display: inline-block;
+    position: relative;
+}
+
+.scena {
+    height: 400px;
+    width: 800px;
+    border: 1px solid #333;
+    position: relative;
+    display: inline-block;
+    margin-top: 250px;
+    margin-left: 60px;
+}
+
+.param {
+    position: absolute;
+    top: 160px;
+    left: 900px;
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+.okrazenia-napis {
+    float: left;
+}
+
+.okrazenia-liczba {
+    float: left;
+}
+
+.czas-napis {
+    float: left;
+}
+
+.czas {
+    float: left;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.samochodzik {
+    height: 20px;
+    width: 20px;
+    background: #f00;
+    position: absolute;
+    z-index: 1;
+}
+
+.dupa {
+    width: 759px;
+    height: 359px;
+    border: 1px solid #333333;
+    justify-content: center;
+    position: absolute;
+    margin: 20px;
+}
+
+.btnStart {
+    border: 1px solid #333;
+    background: #5ad;
+    width: 100px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    margin: 150px auto;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.btnStart:hover {
+    cursor: pointer;
+    background: #7cf;
+}
+
+.flaga {
+    background-image: url("../img/flaga.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 200px;
+    height: 200px;
+    cursor: none;
+    text-align: center;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+.flacha {
+    background-image: url("../img/flacha.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 330px;
+    left: 600px;
+    width: 90px;
+    height: 130px;
+    z-index: 10;
+    display: none;
+}
+
+.tankowanie {
+    position: absolute;
+    top: 460px;
+    left: 600px;
+    width: 100px;
+    height: 50px;
+    z-index: 10;
+    font-weight: bold;
+    display: none;
+}
+
+.display-none {
+    display: none;
+}
+
+.go {
+    border: solid 1px #333333;
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: 200px;
+    font-size: 30px;
+    color: #b81900;
+    font-weight: bold;
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}

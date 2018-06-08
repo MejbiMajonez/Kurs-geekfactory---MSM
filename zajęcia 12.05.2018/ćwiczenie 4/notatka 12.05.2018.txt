@@ -1,0 +1,11 @@
+$(document).ready(function(){
+	jajo();
+	
+	
+	
+});
+wywo³anie funkcji
+function jajo(){
+	console.log('ta funkcja zosta³a wywo³ana po zaczytaniu DOM');
+});
+deklaracja funkcji

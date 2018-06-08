@@ -1,0 +1,15 @@
+Jeden przycisk, (jam jest knefelek)
+
+pod spodem buŸka (div zawieraj¹cy grafikê  z buŸk¹)
+
+klikam na knefelek
+ukrywa siê (za pierwszym razem)
+klikam 2 raz
+pojawia siê (za drugim klikniêciem)
+
+Za ka¿dym razem knefel ma chowaæ siê w inny sposób
+przynajmniej 10 animacji
+czas pokazania (dowolny)
+wiêcej ni¿ 5 sekund nie!
+
+beta-testowaæ ten przycisk!

@@ -1,0 +1,6 @@
+program do odliczania
+37-22
+zegarek
+ma siê zatrzymaæ
+po sekundzie 22 ,,dupa je¿a"
+1s (37.36.35.34... itd)

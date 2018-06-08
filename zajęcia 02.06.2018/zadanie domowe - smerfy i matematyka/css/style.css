@@ -1,0 +1,10 @@
+.kont{
+  display:inline-block;
+
+}
+img{
+  background-position: center center;
+  background-repeat: no-repeat;
+  max-width: 200px;
+  max-height: 200px;
+}

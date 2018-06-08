@@ -1,0 +1,94 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zadanie domowe - knefel</title>
+  
+  <style>
+    #button {text-align:center;
+	margin-left:344px;
+	background-color:#F00;
+	cursor:pointer;
+	width:200px;
+	height:20px;
+	border-radius:20px;
+	border:1px solid #333; }
+    
+	.grafika1{
+	width:400px;
+	height:400px;
+	border:1px solid #333;
+	margin:30px auto;
+	background-image:url("img/sad_pepe1.jpg");
+}
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    // run the currently selected effect
+    function runEffect() {
+      // get effect type from
+      var selectedEffect = $( "#effectTypes" ).val();
+ 
+      // Most effect types need no options passed by default
+      var options = {};
+      // some effects have required parameters
+      if ( selectedEffect === "scale" ) {
+        options = { percent: 50 };
+      } else if ( selectedEffect === "transfer" ) {
+        options = { to: "#button", className: "ui-effects-transfer" };
+      } else if ( selectedEffect === "size" ) {
+        options = { to: { width: 200, height: 60 } };
+      }
+ 
+      // Run the effect
+      $( "#effect" ).effect( selectedEffect, options, 500, callback );
+    };
+ 
+    // Callback function to bring a hidden box back
+    function callback() {
+      setTimeout(function() {
+        $( "#effect" ).removeAttr( "style" ).hide().fadeIn();
+      }, 1000 );
+    };
+ 
+    // Set effect from select menu value
+    $( "#button" ).on( "click", function() {
+      runEffect();
+      return false;
+    });
+  } );
+  </script>
+</head>
+<body>
+ <button id="button" class="knefel1">Jam jest knefel</button>
+ <select name="effects" id="effectTypes">
+  <option value="blind">Schowaj</option>
+  <option value="bounce">Baunsuj</option>
+  <option value="clip">Zamknij</option>
+  <option value="drop">Odjedź</option>
+  <option value="explode">Wybuchnij</option>
+  <option value="fade">Zblednij</option>
+  <option value="fold">Złóż się</option>
+  <option value="highlight">Podświetl</option>
+  <option value="puff">Rozjedź</option>
+  <option value="pulsate">Pulsuj</option>
+  <option value="scale">Skaluj</option>
+  <option value="shake">Trzęś</option>
+  <option value="size">Rozmiar</option>
+  <option value="slide">Ślizgaj</option>
+  <option value="transfer">Transferuj</option>
+</select>
+<div class="toggler">
+  <div id="effect" class="grafika1">
+  </div>
+</div>
+ 
+
+ 
+
+ 
+ 
+</body>
+</html>

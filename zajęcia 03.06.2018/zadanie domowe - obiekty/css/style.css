@@ -1,0 +1,14 @@
+.box {
+  margin:10px;
+  width:20px;
+  height:20px;
+  display:inline-block;
+}
+.romb{
+  transform:rotate(45deg);
+
+}
+.kolo{
+  border-radius:100%;
+  
+}
